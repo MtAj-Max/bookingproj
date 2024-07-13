@@ -1,0 +1,177 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+ }
+ /* aligning hedder */
+ header{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #F6DCAC;
+    border-radius: 25px;
+    padding: 5px 10px ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.hp a{
+    text-decoration: none;
+    color: white;
+}
+/* Background image */
+body{
+    background-image: url(./sources/Train_Belmond20Explorer\,20America_AEP-EXT-01.webp);
+}
+/* creating a container*/
+.pcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    gap: 1rem;
+}
+/*altering the inner container*/
+.con{
+    flex: 1;
+    max-width: 400px;
+    padding: 20px;
+    filter: blur();
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+}
+/*creating hover effect*/
+.con:hover{
+    background-color: #FDFFE2;
+}
+/*css for footer*/
+.ft{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+/* creating response to page*/
+@media (max-width: 1250px) {
+    .pcon {
+      flex-direction: column;
+      height: 100%;
+    }
+}
+.wrap-input-18 { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wrap-input-18 .search {
+    margin: 20px;
+  }
+  
+  .wrap-input-18 .search > div {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .wrap-input-18 .search > div:after {
+    content: "";
+    background: 
+  black;
+    width: 4px;
+    height: 8px;
+    position: absolute;
+    top: 25px;
+    right: 2px;
+    transform: rotate(135deg);
+  }
+  
+  .wrap-input-18 .search > div > input {
+    color: black;
+    font-size: 16px;
+    background: 
+  transparent;
+    width: 5px;
+    height: 5px;
+    padding: 10px;
+    border: solid 3px 
+;
+    outline: none;
+    border-radius: 35px;
+    transition: width 0.5s;
+  }
+  
+  .wrap-input-18 .search > div > input::placeholder {
+    color: 
+  #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+  }
+  
+  .wrap-input-18 .search > div > input:focus::placeholder {
+    opacity: 1;
+  }
+  
+  .wrap-input-18 .search > div > input:focus,
+  .wrap-input-18 .search > div > input:not(:placeholder-shown) {
+    width: 250px;
+  }
+  .btn-shaketext {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 60px;
+    width: 210px;
+    opacity: 1;
+    background-color: 
+  #ffffff;
+    border: 1px solid 
+  rgba(22, 76, 167, 0.6); }
+    .btn-shaketext span {
+      color: 
+  #164ca7;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.7px; }
+    .btn-shaketext:hover {
+      animation: rotate 0.7s ease-in-out both; }
+      .btn-shaketext:hover span {
+        animation: storm 0.7s ease-in-out both;
+        animation-delay: 0.06s; }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0); }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0); }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0); }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0); }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0); } }
+  
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0); }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0); }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0); }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0); }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0); } }

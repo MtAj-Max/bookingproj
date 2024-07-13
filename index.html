@@ -4,98 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
-    <style>
-        /* aligning hedder */
-        .flex1{
-            display: flex;
-            gap: 20px;
-            justify-content: space-between;
-            background-color: #F6DCAC;
-            margin: 0px;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 25px;
-
-        }
-
-        .al{
-            margin: 0px;
-            font-family: sans-serif;
-        }
-        .alg{
-
-            font-style: "Times New Roman";
-            align-items: center;
-            
-        }
-        .alg a{
-            text-decoration: none;
-            color: black;
-        }
-        /* Background image */
-        body{
-            background-image: url(./sources/Train_Belmond20Explorer\,20America_AEP-EXT-01.webp);
-        }
-        /* creating a container*/
-        .pcon{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 65vh;
-            gap: 2rem;
-        }
-        /*altering the inner container*/
-        .con{
-            flex: 1;
-            max-width: 400px;
-            padding: 20px;
-            background-color:#FFF8DB;
-            border-radius: 25px;
-            text-align: center;
-            box-shadow: 5px 5px 5px black;
-        }
-        /*creating hover effect*/
-        .con:hover{
-            background-color: #FDFFE2;
-        }
-        /*css for footer*/
-        .ft{
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            background-color:black;
-            color: white;
-            display: flex;
-            justify-content: space-around;
-        }
-        /* creating response to page*/
-        @media (max-width: 1250px) {
-            .pcon {
-              flex-direction: column;
-              height: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
 <body>
     <!-- creating header -->
-    <header class="flex1">
-
+    <header >
+    
+        
         <h1 class="al">Hello Tickets</h1>
-
-        <div class="flex1 alg">
+        
+       
+        
             <a href="#">Home</a>
             <a href="#">Bookings</a>
             <a href="#">Wallet</a>
             <a href="#">about</a>
-        </div>
+    
 
-        <div class="al" style="margin-top: 8px;">
+        <a href=""></a><div class="al" style="margin-top: 8px;">
             <span class="material-symbols-outlined">
                 account_circle
                 </span>
         </div>
+    
         
     </header>
 
@@ -107,7 +39,7 @@
                 <h2>PNR Status</h2> 
                 <label for="firstname">Enten PNR number</label> <br/>  <br>
                           <input type="text" value="10 digit number"/> <br/>  <br>
-               <input type="button" value="Submit">
+               <input class="btn-shaketext" type="button" value="Submit">
              </form>
             </div>
             <!-- container 2 -->
@@ -119,7 +51,7 @@
                           <input type="text" value="eg:Chennai"/> <br/>  <br>
                 <label for="lastname">Select Date</label>  <br>
                           <input type="date" value="date"> <br> <br>
-                          <input type="button" value="Search Train">
+                          <input class="btn-shaketext" type="button" value="Search Train">
              </form>
             </div>
             <!-- container 3 -->
@@ -131,7 +63,7 @@
                           <input type="text" value="Select Station" /> <br/>  <br>
                           <label for="lastname">Train Start Date</label>  <br>
                           <input type="text" value="Select Date" /> <br/>  <br>
-                          <input type="button" value="Search Station">
+                          <button class="btn-shaketext" ><span>Search Station</span></button> 
              </form>
             </div>
         </div>
@@ -139,7 +71,7 @@
 
     <!-- footer -->
     <footer class="ft">
-        <nav style="margin-top: 10px;">
+        <nav class="hp" style="margin-top: 10px;">
             
             <a href="#">Help</a>
         </nav>
